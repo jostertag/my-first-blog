@@ -1,29 +1,68 @@
 h1 a, h2 a {
-    color: #2804f7;
+    color: #0172c0;
     font-family: 'Anton';
 }
 
+.page-header  {
+    background-image: url('https://images.pexels.com/photos/531756/pexels-photo-531756.jpeg?cs=srgb&dl=pexels-pixabay-531756.jpg&fm=jpg');
+  background-size:cover;
+        -webkit-animation: slidein 100s;
+        animation: slidein 100s;
+
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate;              
+}
+
+@-webkit-keyframes slidein {
+from {background-position: top; background-size:3000px; }
+to {background-position: -100px 0px;background-size:2750px;}
+}
+
+@keyframes slidein {
+from {background-position: top;background-size:3000px; }
+to {background-position: -100px 0px;background-size:2750px;}
+
+}
+
 .page-header {
-    background-color: #0b13ea;
+    background-color: #0172c0;
     margin-top: 0;
     margin-bottom: 40px;
-    padding: 20px 20px 20px 40px;
+    padding: 10rem;
+    text-align: center;
 }
 
 .page-header h1,
 .page-header h1 a,
 .page-header h1 a:visited,
 .page-header h1 a:active {
-    color: #ffffff;
+    color: #343b5a;
     font-size: 36pt;
     text-decoration: none;
 }
 
-h1,
+h1 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    text-shadow: 3px 2px 20px #999;
+}
+
+h2 a, h3 a, h4 a {
+    text-decoration: none;
+}
+
+
 h2,
 h3,
-h4 {
-    font-family: 'Lobster', cursive;
+h4 { 
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
 }
 
 .date {
@@ -50,27 +89,37 @@ h4 {
 
 .post {
     margin-bottom: 70px;
+/*    border-bottom: 1px solid grey;*/
+    padding: 4rem;
+    box-shadow: 3px 2px 20px #ebebeb;
+    background-color: #fff;
 }
 
 .post h2 a,
 .post h2 a:visited {
-    color: #000000;
+    color: #0172c0;
 }
 
 .post > .date,
 .post > .actions {
     float: right;
+    padding: 0.4rem .8rem;
+    border: 2px solid #ebebeb;
+    border-radius: 50rem;
 }
 
 .btn-secondary,
 .btn-secondary:visited {
-    color: #2804f7;
+    color: #0172c0;
     background: none;
-    border-color: #2804f7;
+    border-color: #0172c0;
 }
 
 .btn-secondary:hover {
     color: #FFFFFF;
-    background-color: #2804f7;
+    background-color: #0172c0;
 }
 
+.col {
+    margin-top: -6rem;
+}
